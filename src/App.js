@@ -1,11 +1,11 @@
 
 import './App.css';
-import Alyssa from './Alyssa';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Alyssa/>
+      <Footer/>
       
     </div>
   );
