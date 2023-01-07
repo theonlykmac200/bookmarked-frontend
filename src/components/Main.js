@@ -57,7 +57,7 @@ function Main(props) {
         <Routes>
           <Route exact path="/" element={
             <Index 
-             
+              bookmark={bookmark}
               createBookmark={createBookmark} 
             />} />
           <Route
@@ -65,7 +65,7 @@ function Main(props) {
             element={
               <Show
   
-             
+                bookmark={bookmark}
                 updateBookmark={updateBookmark}
                 deleteBookmark={deleteBookmark}
   
