@@ -31,12 +31,10 @@ function Index(props) {
 
    const loaded = () => {
     return props.bookmark.map((bookmark) => (
-        <div key={bookmark.title} className="bookmark">
-        <Link to={`/bookMarks/${bookmark.title}`}>
-        <h1>{bookmark.link}</h1>
+        <div key={bookmark._id} className="bookmark">
+        <Link to={`/bookMarks/${bookmark._id}`}>
+        <h1>{bookmark.title}</h1>
         </Link>
-
-          <h3>{bookmark.title}</h3>
         </div>
       ))
     }
