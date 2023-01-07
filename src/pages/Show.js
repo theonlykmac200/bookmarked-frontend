@@ -33,8 +33,8 @@ function Show(props) {
 
   return (
     <div className="bookmark">
-      <h1>{bookmark.name}</h1>
       <h2>{bookmark.title}</h2>
+      <h3>{bookmark.url}</h3>
       <img src={bookmark.image} alt={bookmark.name} />
       <button id="delete" onClick={removeBookmark}>
         DELETE
@@ -50,9 +50,9 @@ function Show(props) {
        
         <input
           type="text"
-          value={editForm.title}
-          name="title"
-          placeholder="title"
+          value={editForm.link}
+          name="link"
+          placeholder="link"
           onChange={handleChange}
         />
         <input type="submit" value="Update Bookmark" />
