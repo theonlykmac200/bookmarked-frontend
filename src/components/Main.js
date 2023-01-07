@@ -14,7 +14,7 @@ function Main(props) {
         console.log(bookmark);
       const response = await fetch(URL)
       const data = await response.json()
-      console.log(data);
+      
       setBookmark(data)
     }
   
@@ -57,7 +57,7 @@ function Main(props) {
         <Routes>
           <Route exact path="/" element={
             <Index 
-             
+              bookmark={bookmark}
               createBookmark={createBookmark} 
             />} />
           <Route
@@ -65,7 +65,7 @@ function Main(props) {
             element={
               <Show
   
-             
+                bookmark={bookmark}
                 updateBookmark={updateBookmark}
                 deleteBookmark={deleteBookmark}
   
